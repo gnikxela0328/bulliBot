@@ -20,6 +20,7 @@ public class BulliEars extends ListenerAdapter {
 		bulliBot.awaitReady();
 	}
 
+	@Override
 	public void onMessageReceived(MessageReceivedEvent event) {
 			
 		Message msg = event.getMessage();
