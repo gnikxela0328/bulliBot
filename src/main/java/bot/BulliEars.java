@@ -28,7 +28,7 @@ public class BulliEars extends ListenerAdapter {
 		if(msg.getContentRaw().equals("!RespondBulli")) {
 			MessageChannel channel = event.getChannel();
 			RestAction<Message> action = channel.sendMessage("Bulli can hear you :0");
-			action.queue();
+			action.queue(); 	//This is necessary for executing any REST actions
 		}
 	}
 	
