@@ -11,7 +11,7 @@ import net.dv8tion.jda.api.events.ReadyEvent;
 
 public class BulliEars implements EventListener {
 	public static void main (String[] args) throws LoginException, InterruptedException {
-		JDA bulliBot = JDABuilder.createDefault("NzkzNjcyMzExMTY4OTU4NDk0.X-vq8A.snNga_-6Wn_P-_PxKHGKEVvjiCc")
+		JDA bulliBot = JDABuilder.createDefault(args[0])
 			.addEventListeners(new BulliEars())
 			.build();
 
