@@ -13,6 +13,12 @@ java -jar target/gs-maven-0.1.0.jar [your token here]
 
 make sure you provide the bot token in the "your token here" space
 
+USAGE:
+
+1) type "!RespondBulli"
+
+2) should respond
+
 good luck, happy hunting
 
 -RP
