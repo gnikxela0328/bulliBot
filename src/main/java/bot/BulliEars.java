@@ -10,6 +10,7 @@ import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.MessageChannel;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
+import net.dv8tion.jda.api.requests.RestAction;
 
 public class BulliEars extends ListenerAdapter {
 	public static void main (String[] args) throws LoginException, InterruptedException {
@@ -26,7 +27,8 @@ public class BulliEars extends ListenerAdapter {
 		Message msg = event.getMessage();
 		if(msg.getContentRaw().equals("!RespondBulli")) {
 			MessageChannel channel = event.getChannel();
-			channel.sendMessage("Bulli can hear you :0");
+			RestAction<Message> action = channel.sendMessage("Bulli can hear you :0");
+			action.queue();
 		}
 	}
 	
