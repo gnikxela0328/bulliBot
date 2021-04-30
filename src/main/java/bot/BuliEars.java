@@ -12,22 +12,22 @@ import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.requests.RestAction;
 
-public class BulliEars extends ListenerAdapter {
+public class BuliEars extends ListenerAdapter {
 	public static void main (String[] args) throws LoginException, InterruptedException {
-		JDA bulliBot = JDABuilder.createDefault(args[0])
+		JDA buliBot = JDABuilder.createDefault(args[0])
 			.addEventListeners(new BulliEars())
 			.build();
 
-		bulliBot.awaitReady();
+		buliBot.awaitReady();
 	}
 
 	@Override
 	public void onMessageReceived(MessageReceivedEvent event) {
 			
 		Message msg = event.getMessage();
-		if(msg.getContentRaw().equals("!RespondBulli")) {
+		if(msg.getContentRaw().equals("!RespondBuli")) {
 			MessageChannel channel = event.getChannel();
-			RestAction<Message> action = channel.sendMessage("Bulli can hear you :0");
+			RestAction<Message> action = channel.sendMessage("Buli can hear you :0");
 			action.queue(); 	//This is necessary for executing any REST actions
 		}
 	}
