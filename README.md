@@ -1,5 +1,5 @@
-# bulliBot
-Bot for Bulli
+# buliBot
+Bot for Buli
 
 <h1> Here's how it works ! </h1>
 
@@ -15,7 +15,7 @@ make sure you provide the bot token in the "your token here" space
 
 USAGE:
 
-1) type "!RespondBulli"
+1) type "!RespondBuli"
 
 2) should respond
 
